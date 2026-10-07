@@ -1,0 +1,34 @@
+[project]
+name = "jobfinder"
+version = "0.1.0"
+description = "Job finder tool"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bs4>=0.0.2",
+    "pyyaml>=6.0.3",
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = [
+    "E", "F",   # erreurs de style et erreurs réelles (pyflakes)
+    "W",        # avertissements pycodestyle
+    "I",        # tri des imports (isort)
+    "UP",       # modernise la syntaxe (ex. Optional[X] → X | None)
+    "B",        # pièges courants (flake8-bugbear)
+    "SIM",      # simplifications de code
+    "C4",       # comprehensions plus idiomatiques
+]
+
+[tool.ruff.format]
+quote-style = "double"
