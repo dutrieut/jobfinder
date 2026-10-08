@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "id": 123,
+      "title": "Paris job",
+      "location": {
+        "name": "Paris"
+      },
+      "absolute_url": "https://example.com/jobs/123",
+      "content": "<p>One</p>"
+    },
+    {
+      "id": 456,
+      "title": "London job",
+      "location": {
+        "name": "London"
+      },
+      "absolute_url": "https://example.com/jobs/456",
+      "content": "<p>Two</p>"
+    }
+  ]
+}

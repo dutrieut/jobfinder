@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    {
+      "id": "a1",
+      "title": "Paris job",
+      "location": "Paris",
+      "jobUrl": "https://example.com/a1",
+      "descriptionPlain": "One"
+    },
+    {
+      "id": "a2",
+      "title": "London job",
+      "location": "London",
+      "jobUrl": "https://example.com/a2",
+      "descriptionPlain": "Two"
+    }
+  ]
+}

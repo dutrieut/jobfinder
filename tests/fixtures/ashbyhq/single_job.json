@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    {
+      "id": "a1",
+      "title": "Dev",
+      "location": "Paris",
+      "jobUrl": "https://example.com/a1",
+      "publishedAt": "2026-08-14T15:17:23.480+00:00",
+      "descriptionPlain": "Plain text",
+      "descriptionHtml": "<p>Ignored</p>"
+    }
+  ]
+}
