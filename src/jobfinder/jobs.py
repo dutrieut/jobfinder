@@ -91,6 +91,9 @@ def collect_jobs(targets: Iterable[Target], data_dir: Path) -> list[Job]:
             logger.info(
                 "%s/%s : %d offer(s) in Paris", target.ats, target.name, len(found)
             )
-            write_json(data_dir / target.ats / f"{target.token}.json", [job.to_dict() for job in found])
+            write_json(
+                data_dir / target.ats / f"{target.token}.json",
+                [job.to_dict() for job in found],
+            )
             jobs.extend(found)
     return jobs

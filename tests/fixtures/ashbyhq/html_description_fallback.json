@@ -1,0 +1,11 @@
+{
+  "jobs": [
+    {
+      "id": "a1",
+      "title": "Dev",
+      "location": "Paris",
+      "jobUrl": "https://example.com/a1",
+      "descriptionHtml": "<p>Hello <b>world</b></p>"
+    }
+  ]
+}

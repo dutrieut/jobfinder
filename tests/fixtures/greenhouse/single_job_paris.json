@@ -1,0 +1,13 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Dev",
+      "location": { "name": "Paris" },
+      "absolute_url": "https://example.com/jobs/1",
+      "first_published": "2026-07-27T05:05:21-04:00",
+      "updated_at": "2026-08-31T09:58:40-04:00",
+      "content": "&lt;p&gt;Hello&lt;/p&gt;"
+    }
+  ]
+}

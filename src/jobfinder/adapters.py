@@ -58,7 +58,7 @@ def parse_greenhouse(payload: Any, target: Target) -> Iterator[Job]:
             ats=target.ats,
             company=target.name,
             company_token=target.token,
-            job_id=raw["id"],
+            job_id=str(raw["id"]),
             title=raw.get("title"),
             location=raw.get("location", {}).get("name"),
             url=raw.get("absolute_url"),

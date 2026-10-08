@@ -1,0 +1,16 @@
+[
+  {
+    "id": "l1",
+    "text": "Dev",
+    "hostedUrl": "https://example.com/l1",
+    "createdAt": 1790154788619,
+    "categories": {
+      "allLocations": [
+        "Paris"
+      ]
+    },
+    "opening": "<p>Intro</p>",
+    "descriptionBody": "<p>Body</p>",
+    "additional": "<p>Footer</p>"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "l1",
+    "text": "Dev",
+    "hostedUrl": "https://example.com/l1",
+    "createdAt": 1790154788619,
+    "categories": {
+      "allLocations": [
+        "Paris",
+        "Lyon"
+      ]
+    },
+    "openingPlain": "Intro",
+    "descriptionBodyPlain": "Body",
+    "lists": [
+      {
+        "text": "Perks",
+        "content": "<p>Gym</p>"
+      }
+    ],
+    "additionalPlain": "Footer"
+  }
+]

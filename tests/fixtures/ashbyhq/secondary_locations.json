@@ -1,0 +1,19 @@
+{
+  "jobs": [
+    {
+      "id": "a1",
+      "title": "Dev",
+      "location": "Paris",
+      "secondaryLocations": [
+        {
+          "location": "London"
+        },
+        {
+          "location": "Berlin"
+        }
+      ],
+      "jobUrl": "https://example.com/a1",
+      "descriptionPlain": "Plain text"
+    }
+  ]
+}

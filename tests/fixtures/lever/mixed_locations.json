@@ -1,0 +1,24 @@
+[
+  {
+    "id": "l1",
+    "text": "Paris job",
+    "hostedUrl": "https://example.com/l1",
+    "categories": {
+      "allLocations": [
+        "Paris"
+      ]
+    },
+    "openingPlain": "One"
+  },
+  {
+    "id": "l2",
+    "text": "London job",
+    "hostedUrl": "https://example.com/l2",
+    "categories": {
+      "allLocations": [
+        "London"
+      ]
+    },
+    "openingPlain": "Two"
+  }
+]
