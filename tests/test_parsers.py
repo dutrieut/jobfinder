@@ -1,10 +1,9 @@
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import pytest
 
 from jobfinder.adapters import parse_ashbyhq, parse_greenhouse, parse_lever
 from jobfinder.models import Job, Target
-
 
 ASHBY_TARGET = Target(
     ats="ashbyhq",
@@ -29,7 +28,7 @@ LEVER_TARGET = Target(
 
 
 def utc(*args: int) -> datetime:
-    return datetime(*args, tzinfo=timezone.utc)
+    return datetime(*args, tzinfo=UTC)
 
 
 def ashby_job(**overrides) -> Job:

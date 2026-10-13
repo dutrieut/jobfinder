@@ -1,13 +1,12 @@
-import sys
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 import pytest
 
-from jobfinder.adapters import parse_date
+from jobfinder.utils import parse_date
 
 
 def utc(*args: int) -> datetime:
-    return datetime(*args, tzinfo=timezone.utc)
+    return datetime(*args, tzinfo=UTC)
 
 
 def test_none_returns_none():
