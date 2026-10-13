@@ -1,6 +1,6 @@
 import pytest
 
-from jobfinder.adapters import html_to_text
+from jobfinder.utils import html_to_text
 
 
 @pytest.mark.parametrize("raw", [None, "", "   ", "<p></p>", "<p> \n </p>"])

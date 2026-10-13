@@ -1,23 +1,9 @@
-import html
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
 from typing import Any
 
-from bs4 import BeautifulSoup
-
 from .models import Job, Target
-
-
-def parse_date(value: str | int | None) -> datetime | None:
-    if value is None:
-        return
-    if isinstance(value, int):
-        dt = datetime.fromtimestamp(value / 1000, tz=timezone.utc)
-    else:
-        dt = datetime.fromisoformat(value)
-
-    return dt.astimezone(timezone.utc)
+from .utils import html_to_text, parse_date
 
 
 @dataclass(frozen=True, slots=True)
@@ -37,18 +23,6 @@ def register(ats: str, params: dict[str, str] | None = None):
         return func
 
     return decorator
-
-
-def html_to_text(raw: str | None, unescape: bool = False) -> str:
-    if raw is None:
-        return ""
-    if unescape:
-        raw = html.unescape(raw)
-    return (
-        BeautifulSoup(raw, "html.parser")
-        .get_text("\n", strip=True)
-        .replace("\xa0", " ")
-    )
 
 
 @register("greenhouse", params={"content": "true"})
